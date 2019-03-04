@@ -3,7 +3,7 @@ package rocks.zipcode.io;
 /**
  * @author leon on 30/01/2019.
  */
-public class Item {
+public class Item implements Comparable<Item>{
     private String name;
     private Long id;
     private Double price;
@@ -41,5 +41,9 @@ public class Item {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public int compareTo(Item o) {
+        return 0;
     }
 }
