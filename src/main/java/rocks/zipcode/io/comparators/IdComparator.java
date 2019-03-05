@@ -9,6 +9,6 @@ import java.util.Comparator;
  */
 public class IdComparator implements Comparator<Item> {
     public int compare(Item item1, Item item2) {
-        return 0;
+        return (int) (item1.id - item2.id);
     }
 }

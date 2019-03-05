@@ -5,7 +5,7 @@ package rocks.zipcode.io;
  */
 public class Item implements Comparable<Item>{
     private String name;
-    private Long id;
+    public Long id;
     private Double price;
     public Item() {
         this(0L, "", 0.01);
